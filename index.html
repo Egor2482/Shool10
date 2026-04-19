@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Презентация</title>
+    <title>Галерея</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="feed" id="feed">
-        </div>
+    <div class="feed" id="feed"></div>
 
     <script>
-        const container = document.getElementById('feed');
-        const totalSlides = 40;
-        const fileExt = 'jpg'; // Смени на 'png' или 'webp', если нужно
+        // СЮДА ВСТАВЛЯЙ СВОИ ССЫЛКИ
+        const imageUrls = [
+            "https://example.com/photo1.jpg",
+            "https://example.com/another-link.png",
+            "https://mysite.ru/image404.jpg",
+            // ... добавь все остальные ссылки через запятую в кавычках
+        ];
 
-        for (let i = 1; i <= totalSlides; i++) {
+        const container = document.getElementById('feed');
+
+        // Скрипт сам создаст картинки и расставит их по порядку из списка выше
+        imageUrls.forEach((url, index) => {
             const img = document.createElement('img');
-            img.src = `images/слайд${i}.${fileExt}`;
-            img.alt = `Слайд ${i}`;
+            img.src = url;
+            img.alt = `Слайд ${index + 1}`;
+            img.loading = "lazy"; // Чтобы картинки подгружались постепенно при скролле
             container.appendChild(img);
-        }
+        });
     </script>
 
 </body>
