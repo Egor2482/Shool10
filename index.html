@@ -13,9 +13,51 @@
     <script>
         // СЮДА ВСТАВЛЯЙ СВОИ ССЫЛКИ
         const imageUrls = [
-            "https://example.com/photo1.jpg",
-            "https://example.com/another-link.png",
-            "https://mysite.ru/image404.jpg",
+
+
+
+
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotBeOMi4T86v9-Vozswf1QfYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Notf1yJW4WuyrIby6LK80M7_4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Not2D5VQ6kfySoSvlvtnuYaRIxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotyV94uBsNqQW540n_ScOn6oxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotyV94uBsNqQW540n_ScOn6oxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotzjOKXERoKCJk9pdrAkA2eoxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotpdQ2YgsvxBlpr5ABuKq_k4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotGHEy9B7IWgB5OM_CV40lz4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Not-wV57FklNB7e7PymS2ofzYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotK6_DryXpjychHfSjUaIMG4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotwGesnPqmpru8mgXAgHPlaYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Not1wt4Brep18n9M8Oc0vxnuYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotgIc_6zMYuOIUty13fzw0_Yxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Not84LSh8pZHi-IL2dJibHINoxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Not194MsINCwajRxnP4mQm6H4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotZiZbzB1nu7llwm1n4K8YSIxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Not5tUEHL1oYIc5GFRJJ71C3Yxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotDLxs7GwUjKDHGNnuuZEuu4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotKngSc9DOOyitHRKL_xFEf4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotM928JHHmVLl9kR2z1SbIZYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Notu7x2DozUnG6TAqZOZGlkzYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotSTn0N_Mm7dgzYJ_-n4ulU4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotabhGrMgIffj9VW36t3T0kIxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotpBz2eng_xy7jHbrBOyBcIIxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotKifyVQpPf2zW8-kw_u5xjoxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotyEmyeIA3iJCB7lP-bkSvRYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotEW-g_hejmEaebEGLZxorEoxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotStksQCXUbN3admQPteieVoxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotCzPL-thGi0dNGSteSv2MKYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotbyWOz2rq44TaQeqVbppCOYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotOldKiJyNcPJ7tDlStXoSXYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotW1mMd9IN18dL36tED6dFdYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotihjZ-C7mORJR00Hg18nCy4xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotzHiIamOBUk1wrDKIiv4l7oxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotenPWgG5nlQ0QfDIu9ATFGoxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotvkwSkbqfLx5HRS9LJzASOIxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotKUO0OXoxLKZLIzVUNMf364xb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotU-7TAd2oXrP58GC8SZ0_ZIxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotLDbrVbo-t9L3_SMPjkSYaYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotK3JuPFV3MX5uM5eA5_A4bYxb2yZsm7Zp_z8z1HLp_Xo",
+            "https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2Notymniy4NAecPuds9-a1VC5Ixb2yZsm7Zp_z8z1HLp_Xo",
             // ... добавь все остальные ссылки через запятую в кавычках
         ];
 
