@@ -1,4 +1,4 @@
-/* Полный сброс всех отступов */
+/* Полный сброс отступов */
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +6,33 @@
 }
 
 body {
-    background-color: #000; /* Черный фон выглядит лучше всего для фото */
+    background-color: #000;
+    
+    /* 1. Жестко запрещаем горизонтальную прокрутку (частый баг на телефонах) */
+    overflow-x: hidden; 
+    
+    /* 2. Учитываем "челку" и нижнюю полосу (Home Indicator) на современных iPhone */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .feed {
     display: flex;
-    flex-direction: column; /* Картинки строго друг под другом */
+    flex-direction: column;
     width: 100%;
 }
 
 .feed img {
-    width: 100%;       /* Картинка растягивается на всю ширину окна */
-    height: auto;      /* Высота подстраивается автоматически, без искажений */
-    display: block;    /* Убирает технический зазор в 3-4px под картинкой */
+    width: 100%;
+    height: auto;
+    display: block;
     border: none;
+
+    /* 3. Убираем синюю вспышку при случайном нажатии на картинку пальцем */
+    -webkit-tap-highlight-color: transparent;
+    
+    /* 4. Запрещаем вызов меню "Сохранить картинку", чтобы свайпать было удобнее */
+    -webkit-touch-callout: none;
+    user-select: none;
 }
